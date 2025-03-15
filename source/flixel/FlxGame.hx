@@ -250,13 +250,12 @@ class FlxGame extends Sprite
 	 * @param GameHeight      The height of your game in game pixels, not necessarily final display pixels (see `Zoom`).
 	 *                        If equal to `0`, the window height specified in the `Project.xml` is used.
 	 * @param InitialState    The class name of the state you want to create and switch to first (e.g. `MenuState`).
-	 * @param Zoom            The default level of zoom for the game's cameras (e.g. `2` = all pixels are now drawn at 2x).
 	 * @param UpdateFramerate How frequently the game should update (default is `60` times per second).
 	 * @param DrawFramerate   Sets the actual display / draw framerate for the game (default is `60` times per second).
 	 * @param SkipSplash      Whether you want to skip the flixel splash screen with `FLX_NO_DEBUG`.
 	 * @param StartFullscreen Whether to start the game in fullscreen mode (desktop targets only).
 	 */
-	public function new(GameWidth:Int = 0, GameHeight:Int = 0, ?initialState:InitialState, Zoom:Float = 1, UpdateFramerate:Int = 60,
+	public function new(GameWidth:Int = 0, GameHeight:Int = 0, ?initialState:InitialState, UpdateFramerate:Int = 60,
 			DrawFramerate:Int = 60, SkipSplash:Bool = false, StartFullscreen:Bool = false)
 	{
 		super();
@@ -274,7 +273,7 @@ class FlxGame extends Sprite
 			GameHeight = FlxG.stage.stageHeight;
 
 		// Basic display and update setup stuff
-		FlxG.init(this, GameWidth, GameHeight, Zoom);
+		FlxG.init(this, GameWidth, GameHeight);
 
 		FlxG.updateFramerate = UpdateFramerate;
 		FlxG.drawFramerate = DrawFramerate;
