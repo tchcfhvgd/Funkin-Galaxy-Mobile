@@ -53,6 +53,7 @@ jobs:
           haxelib install hxvlc 1.9.3
           haxelib install hscript
           haxelib install flixel-tools
+          haxelib install hxdiscord_rpc
           haxelib git linc_luajit https://github.com/tchcfhvgd/linc_luajit-0.6.3
           haxelib git extension-androidtools https://github.com/MAJigsaw77/extension-androidtools
           haxelib install hxcpp-debug-server
