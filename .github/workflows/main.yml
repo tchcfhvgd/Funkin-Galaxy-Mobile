@@ -47,9 +47,9 @@ jobs:
           haxelib git hxcpp https://github.com/mcagabe19-stuff/hxcpp
           haxelib git lime https://github.com/mcagabe19-stuff/lime-8.2.2
           haxelib install openfl 9.3.0
-          haxelib install flixel 5.2.2
+          haxelib install flixel 5.0.2
           haxelib install flixel-ui 2.5.0
-          haxelib install flixel-addons 3.0.2
+          haxelib install flixel-addons 3.0.0
           haxelib install hxvlc 1.9.3
           haxelib install hscript
           haxelib install flixel-tools
